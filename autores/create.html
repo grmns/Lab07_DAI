@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Autor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="columns is-centered mt-5">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="title is-4 has-text-centered">Agregar Autor</h1>
+                    </div>
+                    <div class="card-content">
+                        <form method="post" action="create.php" name="formulario">
+                            <div class="field">
+                                <label class="label" for="nombres">Nombres:</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="nombres" id="nombres" maxlength="60" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="ape_paterno">Apellido Paterno:</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="ape_paterno" id="ape_paterno" maxlength="40" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="ape_materno">Apellido Materno:</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="ape_materno" id="ape_materno" maxlength="40">
+                                </div>
+                            </div>
+                            <div class="field is-grouped is-grouped-centered">
+                                <div class="control">
+                                    <button type="submit" class="button is-primary" name="submit">Guardar</button>
+                                </div>
+                                <div class="control">
+                                    <a href="autores.php" class="button is-danger">Cancelar</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
